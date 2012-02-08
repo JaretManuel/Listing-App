@@ -1,39 +1,41 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Heading:</b>
+  Heading:
   <%= @listing.heading %>
 </p>
 
 <p>
-  <b>Price:</b>
+  Price:</b>
   <%= @listing.price %>
 </p>
 
 <p>
-  <b>Baths:</b>
+  Baths:
   <%= @listing.baths %>
 </p>
 
 <p>
-  <b>Bedrooms:</b>
+  Bedrooms:
   <%= @listing.bedrooms %>
 </p>
 
 <p>
-  <b>Features:</b>
+  Features:
   <%= @listing.features %>
 </p>
 
 <p>
-  <b>Location:</b>
+  Location:
   <%= @listing.location %>
+  <%= gmaps4rails(@json) %>
 </p>
 
 <p>
-  <b>Parking:</b>
+  Parking:
   <%= @listing.parking %>
 </p>
+</div>
 
 
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
