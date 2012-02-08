@@ -1,0 +1,108 @@
+body { 
+text-align: center; 
+background: url('wood_pattern.gif'); 
+font-family: "myriad-pro",sans-serif; margin-top: 5px; margin-bottom: 30px; 
+}
+
+.clear { 
+clear: both; 
+} 
+
+.marginless { 
+margin-bottom: 0;
+}
+
+#wrapper { 
+text-align: left; width: 600px; margin: 0 auto; 
+}
+
+#header { 
+padding: 20px 0 0 0; 
+}
+
+#header h1 { 
+font-family: "myriad-pro-condensed",sans-serif; 
+font-size: 51px; 
+text-align: center; 
+text-shadow: 1px 1px 1px #FFF; 
+}
+
+#header h1 span { 
+color: #883333; 
+font-size: 24px; 
+} 
+
+#content { 
+border-radius: 8px; background: #FFF;  padding: 20px;
+-moz-box-shadow:    0px 0px 5px #999;
+-webkit-box-shadow: 0px 0px 5px #999;
+box-shadow:         0px 0px 5px #999;
+}
+
+#content h3 { 
+font-family: "myriad-pro-condensed",sans-serif; color: #883333; font-size: 24px; 
+}
+
+#content p { 
+color: #333; 
+}
+
+#twocolleft { 
+float: left; width: 260px; margin-right: 20px; 
+}
+
+#twocolright { 
+float: left; width: 260px; margin-right: 20px; 
+}
+
+#footer p { 
+font-size: 14px; color: #444; text-shadow: 0px 0px 1px #FFF; 
+}
+
+#footer a img { 
+float: right; border: none; 
+}
+
+/* Mobile Optimization */
+
+@media all and (max-device-width: 600px)  {
+  #wrapper {
+    width: 100%;
+ }
+
+ img { 
+width: 100%; 
+}
+
+#header { 
+text-align: center; 
+}
+  
+#header h1 { 
+font-size: 75px; 
+}
+
+#header h1 span { 
+font-size: 45px; 
+}
+ 
+#content h3 { 
+font-size: 45px; 
+}
+
+#content p { 
+font-size: 26px; 
+}
+
+#twocolright, #twocolleft { float: none; width: 100%; }
+#footer img { width: auto; }
+}
+
+#listing { 
+width: auto;
+text-align: center;
+border-radius: 8px; background: #FFF;  padding: 20px;
+-moz-box-shadow:    0px 0px 5px #999;
+-webkit-box-shadow: 0px 0px 5px #999;
+box-shadow:         0px 0px 5px #999;
+}

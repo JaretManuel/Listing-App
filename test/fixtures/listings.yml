@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  heading: MyString
+  price: 1
+  baths: 1
+  bedrooms: 1
+  features: MyString
+  location: MyString
+  parking: MyString
+
+two:
+  heading: MyString
+  price: 1
+  baths: 1
+  bedrooms: 1
+  features: MyString
+  location: MyString
+  parking: MyString

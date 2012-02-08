@@ -1,0 +1,45 @@
+<%= form_for(@listing) do |f| %>
+  <% if @listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+      <% @listing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :heading %><br />
+    <%= f.text_field :heading %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :baths %><br />
+    <%= f.number_field :baths %>
+  </div>
+  <div class="field">
+    <%= f.label :bedrooms %><br />
+    <%= f.number_field :bedrooms %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br />
+    <%= f.text_field :features %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :parking %><br />
+    <%= f.text_field :parking %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
