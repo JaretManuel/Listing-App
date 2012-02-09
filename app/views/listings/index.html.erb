@@ -8,8 +8,10 @@
         <p>Bedrooms: <span><%= listing.bedrooms %></span></p>
         <p>Features:</p>
         <p><%= listing.features %></p>
-        <p>Location: <span><%= listing.location %></span></p>
         <p>Parking: <span><%= listing.parking %></span></p>
+        <p>Location: <%=listing.location %></p>
+          <%= gmaps4rails(@json) %>
+        
         <p><%= link_to 'Show', listing %></p>
    
         <%= link_to 'Edit', edit_listing_path(listing) %>

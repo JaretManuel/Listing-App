@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<div = "listing">
 <p>
   Heading:
   <%= @listing.heading %>
@@ -26,15 +27,19 @@
 </p>
 
 <p>
-  Location:
-  <%= @listing.location %>
-  </p>
-  <%= gmaps4rails(@json) %>
-
-<p>
   Parking:
   <%= @listing.parking %>
 </p>
+
+<p>
+  Location:
+  <%= @listing.location %>
+  <%= gmaps4rails(@json) %>
+  </p>
+  
+
+
+</div>
 </div>
 
 
